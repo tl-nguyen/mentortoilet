@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Toilet List</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+    <style>
+        .available {
+            background-color: #dff0d8 !important;
+        }
+        
+        .occupied {
+            background-color: #f2dede !important;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+        <h3>Preferred Toilet:</h3>
+        <div id="preffered" class="jumbotron">
+        </div>
+        <h3>All Toilets:</h3>
+        <i>Choose your preferred toilet by clicking the list down below</i>
+        <table class="table">
+            <thead>
+                <tr>
+                    <th>Location</th>
+                    <th>Type</th>
+                    <th>Is Available</th>
+                </tr>
+            </thead>
+            <tbody id="table-body">
+            </tbody>
+        </table>
+        <br />
+        <div class="text-right">
+            <a href="https://drive.google.com/open?id=0B9eRZ4-y6xH7NkZCd0xldnlMNEU"><b>Desktop app for Windows</b></a>
+        </div>
+    </div>
+
+    <script src="https://www.gstatic.com/firebasejs/3.1.0/firebase.js"></script>
+    <script src="./main.js"></script>
+
+</body>
+
+</html>
