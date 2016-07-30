@@ -1,4 +1,7 @@
 #include <ESP8266WiFi.h>
+#include <DNSServer.h>
+#include <ESP8266WebServer.h>
+#include <WiFiManager.h>
 #include <FirebaseArduino.h>
 
 //AP definitions
@@ -22,8 +25,17 @@ int retryTime = 30;
 void setup() {
   Serial.begin(115200);
   pinMode(PIR_PIN, INPUT);
-  wifiConnect();
+//  wifiConnect();
+  autoWifiConnect();
   Firebase.begin(FIREBASE_HOST, FIREBASE_AUTH);
+}
+
+void autoWifiConnect() {
+  WiFiManager wifiManager;
+  wifiManager.autoConnect("ToiletMate-F6-12");
+  Serial.println("\nWiFi connected");
+  Serial.print("IP address: ");
+  Serial.println(WiFi.localIP());
 }
 
 void wifiConnect() {
