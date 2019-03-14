@@ -9,7 +9,7 @@
 #define AP_PASSWORD ""
 
 //Firebase definitions
-#define FIREBASE_HOST "mentortoilet.firebaseio.com"
+#define FIREBASE_HOST ""
 #define FIREBASE_AUTH ""
 
 // GPIOs
