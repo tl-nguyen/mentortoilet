@@ -5,14 +5,12 @@
 #include <FirebaseArduino.h>
 
 //AP definitions
-//#define AP_SSID "MMNet"
-//#define AP_PASSWORD "MMValuableNET"
-#define AP_SSID "TL"
-#define AP_PASSWORD "qwerty321"
+#define AP_SSID ""
+#define AP_PASSWORD ""
 
 //Firebase definitions
 #define FIREBASE_HOST "mentortoilet.firebaseio.com"
-#define FIREBASE_AUTH "KT0fMWTFfSWK7pmJNuF82gU7w287OA9W4iH4Axss"
+#define FIREBASE_AUTH ""
 
 // GPIOs
 #define PIR_PIN 2
